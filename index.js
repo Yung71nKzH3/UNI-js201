@@ -25,9 +25,14 @@ function sn() {
   return 'Valenti';
 }
 
-function example() {
-  // replace this example with
-  // your first function then
-  // add more below as necessary.
+function add(a, b) {
+  return a + b;
+}
 
+function subtract(a, b) {
+  return a - b;
+}
+
+function checkObject(obj) {
+  obj.checked = true;
 }
