@@ -48,3 +48,32 @@ function arraySet(arr, i, n) {
     arr[i] = n;
   }
 }
+
+function addAll(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+function larger(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+
+function largest(arr) {
+  if (arr.length === 0) {
+    return null;
+  }
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}

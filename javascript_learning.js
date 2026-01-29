@@ -195,7 +195,7 @@ console.log("--- Testing add function ---");
 console.log("5 + 10 =", add(5, 10));
 console.log("Object Test:", student);
 console.log("User metadata is safe to access:", user.metadata.id);
-}
+
 
 // ==========================================
 // 9. Checking Types (How to know what you have?)
