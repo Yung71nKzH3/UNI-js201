@@ -64,48 +64,54 @@ function addAll(arr) {
 
 /*Question 11*/
 function larger(a, b) {
-  if (a > b) {
-    return a;
-  } else {
-    return b;
-  }
+  //   if (a > b) {
+  //     return a;
+  //   } else {
+  //     return b;
+  // }
+  return a > b ? a : b;
 }
 
 /*Question 12*/
 function largest(arr) {
-  if (arr.length === 0) {
-    return null;
-  }
+  // if (arr.length === 0) {
+  //   return null;
+  // }
+  // return arr.reduce((max, curr) => (curr > max ? curr : max), arr[0]);
+  if (!arr.length) return null;
   return arr.reduce((max, curr) => (curr > max ? curr : max), arr[0]);
 }
 
 /*Question 13*/
 function compare(a, b) {
-  if (a.length !== b.length) {
-    return false;
-  }
-  return a.every((element, i) => element === b[i]);
+  if (a.length !== b.length) return false;
+  // return a.every((element, i) => element === b[i]);
+  return JSON.stringify(a) === JSON.stringify(b);
 }
 
 /*Question 14*/
 function addToAll(arr, n) {
-  arr.forEach((_, i) => {
-    arr[i] += n;
-  });
+  // arr.forEach((_, i) => {
+  //   arr[i] += n;
+  // });
+  arr.forEach((_, i) => arr[i] += n);
   return arr;
 }
 
 /*Question 15*/
 let remembered;
-
 function rememberThis(keepsake) {
   remembered = keepsake;
-  return remembered;
 }
 
 /*Question 16*/
 function nArray(n) {
-  return Array.from({ length: n }, (_, i) => i + 1);
+  //return Array.from({ length: n }, (_, i) => i + 1);
+  const result = [];
+  for (let i = 1; i <= n; i++) {
+    result.push(i);
+  }
+  return result;
 }
 
 /*Question 17*/
